@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import SithEmblem from '/./resources/img/Sith Emblem.jpg'
-import Team2Emblem from '/./resources/img/download.jpg'
-import Team3Emblem from '/./resources/img/EF-EMB-P-00053.jpg'
-import Team4Emblem from '/./resources/img/EF-EMB-P-00071.jpg'
-import Team5Emblem from '/./resources/img/EF-EMB-P-00074.jpg'
-import Team6Emblem from '/./resources/img/batman.jpg'
-import Team7Emblem from '/./resources/img/images.png'
-import Team8Emblem from '/./resources/img/20653.jpg'
+import SithEmblem from '../resources/img/Sith Emblem.jpg'
+import Team2Emblem from '../resources/img/download.jpg'
+import Team3Emblem from '../resources/img/EF-EMB-P-00053.jpg'
+import Team4Emblem from '../resources/img/EF-EMB-P-00071.jpg'
+import Team5Emblem from '../resources/img/EF-EMB-P-00074.jpg'
+import Team6Emblem from '../resources/img/batman.jpg'
+import Team7Emblem from '../resources/img/images.png'
+import Team8Emblem from '../resources/img/20653.jpg'
 
 
 const Team = (props) => {

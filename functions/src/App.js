@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 import Navbar from "./components/Navbar";
-import Guidelines from './components/Guidelines';
-import '../vendors/css/grid.css'
-import '../vendors/css/normalize.css'
-import '../resources/css/style.css'
+import Guidelines from "./components/Guidelines";
 import Teams from "./components/Teams";
 
 class App extends Component {
@@ -13,12 +10,6 @@ class App extends Component {
 
   render() {
     return(
-      <>
-        <head>
-          <title>Hackathon Spring 2019</title>
-            <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400" rel="stylesheet"/>
-        </head>
-
         <body>
           <header>
             <Navbar/>
@@ -33,7 +24,6 @@ class App extends Component {
           <Teams/>
 
         </body>
-      </>
     );
   }
 }

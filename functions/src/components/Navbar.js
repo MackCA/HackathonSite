@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import SCCC_LOGO from '../../resources/img/SCCC_LOGO_WHITE_150.png';
+import SCCC_LOGO from '../resources/img/SCCC_LOGO_WHITE_150.png';
 
 class Navbar extends Component {
   render() {
