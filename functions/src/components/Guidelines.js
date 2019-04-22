@@ -35,7 +35,7 @@ class Guidelines extends Component {
               <ion-icon name="ribbon" className="icon-big"/>
               <h3>Sweet victory</h3>
               <p>The audience will be polled on what their favorite project was and the projects judged most highly by the
-                professors will be declared winners. The winners will have the oportunity to record a video about their
+                professors will be declared winners. The winners will have the opportunity to record a video about their
                 projects to be showcased on this website.
               </p>
             </div>
