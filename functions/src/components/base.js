@@ -1,4 +1,5 @@
-const firebase = require('firebase-functions');
+const firebase = require('firebase/app');
+export const functions = require('firebase-functions');
 require('firebase/database');
 
 // // Create and Deploy Your First Cloud Functions
