@@ -140,7 +140,7 @@ header {
     height: 100vh;
 }
 .title-text-box {
-    position: absolute;
+    position:absolute;
     width: 1140px;
     top: 50%;
     left: 50%;
@@ -175,6 +175,16 @@ list-style: none;
 .main-nav li a:active{
     border-bottom: 2px solid #0256b9;
 }
+/*-----------------------------------------------*/
+/*------Visitors---------*/
+/*-----------------------------------------------*/
+
+.section-features .long-copy{
+    margin-bottom: 30px;
+}
+
+
+
 /*-----------------------------------------------*/
 /*------Teams---------*/
 /*-----------------------------------------------*/
