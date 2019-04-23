@@ -12,25 +12,30 @@
     <link rel="stylesheet" type="text/css" href="\resources\css\queries.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.6.0/firebaseui.css" />
-    <script src="https://cdn.firebase.com/libs/firebaseui/3.6.0/firebaseui.js"></script>
 </head>
 
 
 <body>
     <header>
-        <nav>
+        <nav class="sticky">
             <div class="row">
-                <img src="\resources\img\SCCC_LOGO_WHITE_150.png" alt="SCCC Logo" class="logo">
-                <ul class="main-nav">
-                    <li><a href="#">Teams</a></li>
-                    <li><a href="#">Rules</a></li>
-                    <li><a href="#">Information</a></li>
+                <a href="https://www.sunysuffolk.edu/">
+                    <img src="\resources\img\SCCC_LOGO_WHITE_150.png" alt="SCCC Logo" class="logo">
+                    <img src="\resources\img\SCCC Logo.png" alt="SCCC Logo" class="logo-blue">
+                </a>
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#team-profiles">Teams</a></li>
+                    <li><a href="#rules">Rules</a></li>
+                    <li><a href="#register">Register</a></li>
+                    <li><a href="#poll">Showcase</a></li>
+                    <li><a href="#">Top</a></li>
                 </ul>
+                <a class="mobile-nav-icon js--nav-icon"><i><ion-icon name="menu" class="mobile-icon"></ion-icon></i></a>
             </div>
         </nav>
         <div class="title-text-box">
             <h1>Hackathon Spring 2019</h1>
-            <a class="btn btn-full" href="#">Register</a>
+            <a class="btn btn-full js--scroll-to-register" href="#">Register</a>
             <a class="btn btn-ghost" href="#">Login</a>
         </div>
     </header>
@@ -38,7 +43,7 @@
 
 
     <!-----------RULES---------------------------------------------------------------------------->
-    <section class="section-rules">
+    <section class="section-rules js--section-rules" id="rules">
         <div class="row">
             <h2>Competition Guidelines</h2>
             <p class="long-copy">
@@ -77,7 +82,7 @@
 
 
     <!-----------TEAMS---------------------------------------------------------------------------->
-    <section class="section-teams">
+    <section class="section-teams" id="poll">
         <ul class="teams-showcase clearfix">
             <li>
                 <figure class="team-emblem">
@@ -139,7 +144,7 @@
 
 
     <!-----------TEAM PROFILES---------------------------------------------------------------------------->
-    <section class="section-team-profiles">
+    <section class="section-team-profiles" id="team-profiles">
         <div class="row">
             <h2>Team Profiles</h2>
         </div>
@@ -391,7 +396,7 @@
 
     <!-----------REGISTRATION FORM---------------------------------------------------------------------------->
 
-    <section class="section-register">
+    <section class="section-register js--section-register" id="register">
         <div class="row">
             <h2>Register for Hackathon</h2>
         </div>
@@ -443,6 +448,14 @@
                     </div>
                     <div class="col span-2-of-3">
                         <input type="email" name="email" id="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="psw">Password*</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="password" id="psw" name="psw" placeholder="Password" required>
                     </div>
                 </div>
                 <div class="row">
@@ -502,8 +515,11 @@
         firebase.initializeApp(config);
 
     </script>
-    
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.6.0/firebaseui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
 </body>
 
 </html>
