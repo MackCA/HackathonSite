@@ -121,19 +121,13 @@
         display: block;
     }
 
-
-
     h1 {
         font-size: 180%;
     }
 
-    h2 {
-        font-size: 150%;
-    }
+    h2 {font-size: 150%;}
 
-    .captions {
-        font-size: 90%
-    }
+    .captions {font-size: 90%}
 }
 
 /*Small phones from 0 to 480px*/
