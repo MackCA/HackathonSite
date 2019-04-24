@@ -1,0 +1,395 @@
+/*-----------------------------------------------*/
+/*------Basic Setup---------*/
+/*-----------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    color: #555;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix{zoom:1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+    overflow-x: hidden;
+}
+
+/*-----------------------------------------------*/
+/*------Reusable Components---------*/
+/*-----------------------------------------------*/
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+/*-----------------------------------------------*/
+/*------Headings---------*/
+/*-----------------------------------------------*/
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #0256b9;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+/*-----------------------------------------------*/
+/*------Paragraphs---------*/
+/*-----------------------------------------------*/
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 17%;
+    text-align: center;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/*-----------------------------------------------*/
+/*------Icons---------*/
+/*-----------------------------------------------*/
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: #0256b9;
+    margin-bottom: 10px;
+}
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #0256b9;
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+    
+}
+
+
+/*-----------------------------------------------*/
+/*------Buttons---------*/
+/*-----------------------------------------------*/
+
+.btn:link,
+.btn:visited,
+input[type=submit],
+input[type=file]{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited, 
+input[type=submit]{
+    background-color: #0256b9;
+    border: 1px solid #0256b9;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #0256b9;
+    color: #0256b9;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type_submit]:active{
+    background-color: #036deb;
+}
+
+.btn-full:hover,
+.btn-full:active 
+{
+    border: 1px solid #0256b9;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #0256b9;
+    color: #fff;
+}
+
+/*-----------------------------------------------*/
+/*------Header---------*/
+/*-----------------------------------------------*/
+
+header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/NYCcityscapeBlue.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/NYCcityscapeBlue.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.title-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.logo
+{
+    height: 50px;
+    width: auto;
+    float: left;
+    margin-top: 40px;
+}
+.logo-blue{display: none;
+height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;}
+
+
+/*--------Main Navigation--------*/
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+.logo:hover{
+border-bottom: 4px solid transparent;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #0256b9;
+}
+
+/*--------Sticky Navigation--------*/
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #a5a5a5;
+    z-index: 9999;
+}
+
+.sticky .main-nav {margin-top: 18px;}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 18px 0;
+    color: #555;
+}
+.sticky .logo{display: none;}
+.sticky .logo-blue{display: block;}
+/*--------Mobile Navigation--------*/
+
+.mobile-nav-icon{
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i{
+    font-size:200%;
+    color: #fff;
+}
+
+/*-----------------------------------------------*/
+/*------Team Profiles---------*/
+/*-----------------------------------------------*/
+
+.section-team-profiles,
+.long-copy {
+    margin-bottom: 30px;
+}
+
+.team-emblem-profile {
+    width: 75%;
+    margin: 0px;
+    background-color: #000;
+}
+
+.team-listing {
+    display: inline-block;
+    text-align: justify;
+    padding-bottom: 70px;
+}
+.profile{
+    padding: 20px;
+}
+.project-summary{
+    text-align: justify;
+    
+}
+.section-team-profiles{
+    background-color: #f4f4f4;
+}
+
+/*-----------------------------------------------*/
+/*------Teams---------*/
+/*-----------------------------------------------*/
+.section-teams {
+    padding: 0;
+}
+
+.teams-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.teams-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.team-emblem {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.team-emblem img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.team-emblem img:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+.captions {
+    text-align: center;
+    color: transparent;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+[rel="emblem"]:hover + .captions {
+    color: #fff;
+}
+/*-----------------------------------------------*/
+/*------Team Profiles---------*/
+/*-----------------------------------------------*/
+.registration-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #313131;
+}
+
+textarea{
+    height: 100px;
+}
+
+*:focus{
+    outline: none;
+}
+
+/*-----------------------------------------------*/
+/*------Footer---------*/
+/*-----------------------------------------------*/
+footer{
+    background-color: #333;
+}
