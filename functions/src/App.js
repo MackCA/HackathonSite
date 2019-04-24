@@ -6,13 +6,14 @@ import './resources/vendors/fonts/_ionicons_svg_ios-bulb.svg';
 import './resources/vendors/fonts/_ionicons_svg_ios-mic.svg';
 import './resources/vendors/fonts/_ionicons_svg_ios-people.svg';
 import './resources/vendors/fonts/_ionicons_svg_ios-ribbon.svg';
-<<<<<<< HEAD
-=======
-import './resources/css/style.css'
-import Navbar from "./components/Navbar";
->>>>>>> parent of 417e30f... Threw header into... well... Header.
+ HEAD
 import Guidelines from "./components/Guidelines";
 import Teams from "./components/Teams";
+
+import Guidelines from "./components/Guidelines";
+import Teams from "./components/Teams";
+import Header from "./components/Header";
+ cd65fdadc68835142d1e46bdb272d742abaa6937
 
 class App extends Component {
   state = {
