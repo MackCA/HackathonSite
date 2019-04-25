@@ -40,6 +40,11 @@
     .registration-form {
         width: 80%;
     }
+
+    .login-form-box {
+        margin-top: 40%;
+
+    }
 }
 
 
@@ -75,7 +80,9 @@
         text-align: justify;
     }
 
-    main-nav{display: none;}
+    main-nav {
+        display: none;
+    }
 
     .mobile-nav-icon {
         display: inline-block;
@@ -109,9 +116,17 @@
     }
 
     .sticky .main-nav li a:link,
-    .sticky .main-nav li a:visited {padding: 10px 0;}
-    .sticky .mobile-nav-icon {margin-top: 10px;}
-    .sticky .mobile-nav-icon i{color: #555}
+    .sticky .main-nav li a:visited {
+        padding: 10px 0;
+    }
+
+    .sticky .mobile-nav-icon {
+        margin-top: 10px;
+    }
+
+    .sticky .mobile-nav-icon i {
+        color: #555
+    }
 
     .sticky .logo {
         display: none;
@@ -125,9 +140,13 @@
         font-size: 180%;
     }
 
-    h2 {font-size: 150%;}
+    h2 {
+        font-size: 150%;
+    }
 
-    .captions {font-size: 90%}
+    .captions {
+        font-size: 90%
+    }
 }
 
 /*Small phones from 0 to 480px*/
@@ -141,6 +160,10 @@
     }
 
     .registration-form {
+        width: 100%;
+    }
+
+    .login-form-box {
         width: 100%;
     }
 

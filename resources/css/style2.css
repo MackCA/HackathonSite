@@ -139,8 +139,7 @@ h2:after {
 .btn:link,
 .btn:visited,
 input[type=submit],
-input[type=file],
-input[sign-in] {
+input[type=file] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -359,7 +358,7 @@ header {
 }
 
 .team-emblem img {
-    opacity: 1;
+    opacity: 0.7;
     width: 100%;
     height: auto;
     -webkit-transform: scale(1.15);
@@ -373,7 +372,7 @@ header {
 .team-emblem img:hover {
     -webkit-transform: scale(1);
     transform: scale(1);
-    opacity: .2;
+    opacity: 1;
 }
 
 .captions {
@@ -395,45 +394,7 @@ header {
     margin: 0 auto;
 }
 
-.login-form-box {
-    display: none;
-    min-width: 25%;
-    max-width: 300px;
-    margin-top: 25%;
-    margin-left: 40%;
-    position: absolute;
-    background-color: rgba(201, 201, 201, 0.66);
-    border-radius: 21px;
-    z-index: 1;
-}
-
-
-.pass-login {
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
-.email-login {
-    z-index: +99;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
-.sign-in {
-    color: #fff;
-    margin: 0;
-    z-index: -9999;
-}
-
-.forgot {
-    margin-left: 15px;
-    font-size: 80%;
-    margin: 0;
-}
-
 input[type=text],
-input[type=email],
-input[type=password],
 textarea {
     width: 100%;
     padding: 7px;
@@ -454,4 +415,7 @@ textarea {
 /*-----------------------------------------------*/
 footer {
     background-color: #333;
+}
+.footer-container{
+    height: 30px;
 }

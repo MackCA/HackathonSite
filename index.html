@@ -23,7 +23,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    
+
 </head>
 
 
@@ -39,16 +39,26 @@
                     <li><a href="#team-profiles">Teams</a></li>
                     <li><a href="#rules">Rules</a></li>
                     <li><a href="#register">Register</a></li>
-                    <li><a href="#poll">Showcase</a></li>
+                    <li><a href="#majors">Showcase</a></li>
                     <li><a href="#">Top</a></li>
                 </ul>
-                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                <a class="mobile-nav-icon js--nav-icon"><i class="ion-close-round"></i></a>
             </div>
         </nav>
-        <div class="title-text-box">
-            <h1>Hackathon Spring 2019</h1>
+
+        <div class="title-text-box" class="col span 1-out-of-1">
+            <h1>Hackathon<br>Spring 2019</h1>
             <a class="btn btn-full js--scroll-to-register" href="#">Register</a>
-            <a class="btn btn-ghost" href="#">Login</a>
+            <a class="btn btn-ghost" href="#" onclick="showLogin().user()">Login</a>
+        </div>
+        <div class="login-form-box" id="login-box">
+            <h3 class="sign-in" align="center">Sign in</h3>
+            <form class="login-form">
+                <input class="email-login" type="email" id="login-email" align="center" placeholder="Email">
+                <input class="pass-login" type="password" id="login-pwd" align="center" placeholder="Password">
+                <input type="submit" value="Sign in" onclick="login()" href="page2.html">
+                <a href="#" class="forgot" align="center" onclick="passwordReset()">Forgot Password?</a>
+            </form>
         </div>
     </header>
 
@@ -94,30 +104,37 @@
 
 
     <!-----------TEAMS---------------------------------------------------------------------------->
-    <section class="section-teams" id="poll">
+    <section class="section-teams" id="majors">
+
         <ul class="teams-showcase clearfix">
             <li>
+                <div class="major-data">
+                    <figure class="team-emblem">
+                        <p class="career-data">Some text Here</p>
+                        <img src="\resources\img\CS.png" alt="CS Emblem" rel="emblem">
+                        <figcaption class="captions">Major: Computer Science</figcaption>
+                    </figure>
+                </div>
+            </li>
+            <li>
                 <figure class="team-emblem">
-                    <img src="\resources\img\Sith Emblem.jpg" alt="Team 1 Emblem" rel="emblem">
-                    <figcaption class="captions">Team: The Sith Empire</figcaption>
+                    <p class="career-data">Some text Here</p>
+                    <img src="\resources\img\psy.png" alt="Psychology Emblem" rel="emblem">
+                    <figcaption class="captions">Major: Psychology</figcaption>
                 </figure>
             </li>
             <li>
                 <figure class="team-emblem">
-                    <img src="\resources\img\download.jpg" alt="Team 2 Emblem" rel="emblem">
-                    <figcaption class="captions">Team: Biohazard</figcaption>
+                    <p class="career-data">Some text Here</p>
+                    <img src="\resources\img\la.png" alt="Liberal Arts Emblem" rel="emblem">
+                    <figcaption class="captions">Major: Liberal Arts - Humanities</figcaption>
                 </figure>
             </li>
             <li>
                 <figure class="team-emblem">
-                    <img src="\resources\img\EF-EMB-P-00053.jpg" alt="Team 3 Emblem" rel="emblem">
-                    <figcaption class="captions">Team: The Empire</figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure class="team-emblem">
-                    <img src="\resources\img\EF-EMB-P-00071.jpg" alt="Team 4 Emblem" rel="emblem">
-                    <figcaption class="captions">Team: The First Order</figcaption>
+                    <p class="career-data">Some text Here</p>
+                    <img src="\resources\img\pl.png" alt="Paralegal Emblem" rel="emblem">
+                    <figcaption class="captions">Major: Paralegal </figcaption>
                 </figure>
             </li>
         </ul>
@@ -127,26 +144,30 @@
         <ul class="teams-showcase clearfix">
             <li>
                 <figure class="team-emblem">
-                    <img src="\resources\img\EF-EMB-P-00074.jpg" alt="Team 5 Emblem" rel="emblem">
-                    <figcaption class="captions">Team: The Jedi Order</figcaption>
+                    <p class="career-data">Some text Here</p>
+                    <img src="\resources\img\bus1.png" alt="Business Emblem" rel="emblem">
+                    <figcaption class="captions">Major: Business</figcaption>
                 </figure>
             </li>
             <li>
                 <figure class="team-emblem">
-                    <img src="\resources\img\batman.jpg" alt="Team 6 Emblem" rel="emblem">
-                    <figcaption class="captions">Team: The Batman</figcaption>
+                    <p class="career-data">Some text Here</p>
+                    <img src="\resources\img\rn.png" alt="Nursing Emblem" rel="emblem">
+                    <figcaption class="captions">Major: Nursing</figcaption>
                 </figure>
             </li>
             <li>
                 <figure class="team-emblem">
-                    <img src="\resources\img\images.png" alt="Team 7 Emblem" rel="emblem">
-                    <figcaption class="captions">Team: The Main Event</figcaption>
+                    <p class="career-data">Some text Here</p>
+                    <img src="\resources\img\acc.png" alt="Accounting and Bookeeping Emblem" rel="emblem">
+                    <figcaption class="captions">Major: Accounting and Bookeeping</figcaption>
                 </figure>
             </li>
             <li>
                 <figure class="team-emblem">
-                    <img src="\resources\img\20653.jpg" alt="Team 8 Emblem" rel="emblem">
-                    <figcaption class="captions">Team: The Crazy One</figcaption>
+                    <p class="career-data">Some text Here</p>
+                    <img src="\resources\img\20653.jpg" alt="Graphic Design Emblem" rel="emblem">
+                    <figcaption class="captions">Major: Graphic Design</figcaption>
                 </figure>
             </li>
         </ul>
@@ -410,93 +431,34 @@
 
     <section class="section-register js--section-register" id="register">
         <div class="row">
-            <h2>Register for Hackathon</h2>
+            <h2>Register for Hackathon</h2><br>
+            <h3 class="reg-info">One member from each team should register here.</h3>
         </div>
         <div class="row">
             <form method="post" action="#" class="registration-form">
                 <div class="row">
                     <div class="col span-1-of-3">
-                        <label for="team-name">Team Name*</label>
+                        <label for="email">Email Address</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input type="text" name="team-name" id="team-name" placeholder="Team Name" required>
+                        <input type="email" name="email-register" id="email-register" placeholder="Email" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col span-1-of-3">
-                        <label for="member-name-1">Member Name*</label>
+                        <label for="pwd">Password</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input type="text" name="member-name-1" id="member-name-1" placeholder="Member Name" required>
+                        <input type="password" id="password-register" name="password-register" placeholder="Password" required>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="member-name-2">Member Name</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="text" name="member-name-2" id="member-name-2">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="member-name-3">Member Name</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="text" name="member-name-3" id="member-name-3">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="member-name-4">Member Name</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="text" name="member-name-4" id="member-name-4">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="email">Email Address*</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="email" name="email" id="email" placeholder="Email" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="psw">Password*</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="password" id="psw" name="psw" placeholder="Password" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="description-input">Project Description*</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <textarea name="project-description" id="description-input" rows="4" cols="30" required>Enter a brief project description.</textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="emblem-input">Team Emblem*</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="file" name="emblem" id="emblem-input" accept="image/*" required>
-                    </div>
-                </div>
+
                 <div class="row">
                     <div class="col span-1-of-3">
                         <label>&nbsp;</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input type="submit" value="Register">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label>* Required</label>
+                        <input type="submit" value="Register" onclick="register()">
                     </div>
                 </div>
             </form>
@@ -514,19 +476,6 @@
 
 
     <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyCNzDj-mtM8EeSVp1oX1YTwJoih-qdUxYI",
-            authDomain: "sccc-hackathon-spring-2019.firebaseapp.com",
-            databaseURL: "https://sccc-hackathon-spring-2019.firebaseio.com",
-            projectId: "sccc-hackathon-spring-2019",
-            storageBucket: "sccc-hackathon-spring-2019.appspot.com",
-            messagingSenderId: "792531230283"
-        };
-        firebase.initializeApp(config);
-
-    </script>
     <script src="https://cdn.firebase.com/libs/firebaseui/3.6.0/firebaseui.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
