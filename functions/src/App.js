@@ -6,6 +6,7 @@ import './resources/vendors/fonts/_ionicons_svg_ios-bulb.svg';
 import './resources/vendors/fonts/_ionicons_svg_ios-mic.svg';
 import './resources/vendors/fonts/_ionicons_svg_ios-people.svg';
 import './resources/vendors/fonts/_ionicons_svg_ios-ribbon.svg';
+<<<<<<< HEAD
 import './resources/css/style.css'
 import Navbar from "./components/Navbar";
 import Guidelines from "./components/Guidelines";
@@ -20,6 +21,16 @@ import Teams from "./components/Teams";
 import Header from "./components/Header";
  cd65fdadc68835142d1e46bdb272d742abaa69379127de7ed67214b9dc46059bcd4a414f9044a23c
 
+=======
+<<<<<<< HEAD
+=======
+import './resources/css/style.css'
+import Navbar from "./components/Navbar";
+>>>>>>> parent of 417e30f... Threw header into... well... Header.
+import Guidelines from "./components/Guidelines";
+import Teams from "./components/Teams";
+
+>>>>>>> master
 class App extends Component {
   state = {
     trigger: false
