@@ -168,7 +168,7 @@ input[type=submit] {
 .btn:hover,
 .btn:active,
 input[type=submit]:hover,
-input[type_submit]:active {
+input[type=submit]:active {
     background-color: #036deb;
 }
 
@@ -376,6 +376,25 @@ header {
     opacity: .2;
 }
 
+/* Container holding the image and the text */
+.majors {
+    position: relative;
+}
+
+
+
+.major-text {
+    color: transparent;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
 .captions {
     text-align: center;
     color: transparent;
@@ -383,9 +402,12 @@ header {
     transition: color 0.5s;
 }
 
-[rel="emblem"]:hover + .captions {
+[rel="emblem"]:hover + .captions,
+.major-text {
     color: #fff;
 }
+
+
 
 /*-----------------------------------------------*/
 /*------Team Profiles---------*/
@@ -448,6 +470,8 @@ textarea {
 *:focus {
     outline: none;
 }
+
+
 
 /*-----------------------------------------------*/
 /*------Footer---------*/
