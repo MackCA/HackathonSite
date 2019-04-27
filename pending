@@ -1,0 +1,85 @@
+//Get user data for page that requires it
+firebase.auth().onAuthStateChanged(function (user) {
+    if (user) {
+        // User is signed in.
+        var displayName = user.displayName;
+        var email = user.email;
+        var emailVerified = user.emailVerified;
+        var photoURL = user.photoURL;
+        var isAnonymous = user.isAnonymous;
+        var uid = user.uid;
+        var providerData = user.providerData;
+        // ...
+    } else {
+        // User is signed out.
+        // ...
+    }
+});
+
+
+
+firebase.database().ref('users/' + userId).set({
+    username: name,
+    email: email,
+    profile_picture: imageUrl
+}, );
+}
+switch (teamData.length) {
+               case 4:
+                   {
+                       function writeUserData(userId, teamName, memberName1, projectSummary, emblem) {
+                           firebase.database().ref('users/' + userId).set({
+                               teamName: teamData[0],
+                               memberName1: teamData[1],
+                               projectSummary: teamData[2],
+                               emblem: teamData[3]
+                           })
+                       }
+                       break;
+                   }
+               case 5:
+                   {
+                       function writeUserData(userId, teamName, memberName1, memberName2, projectSummary, emblem) {
+                           firebase.database().ref('users/' + userId).set({
+                               teamName: teamData[0],
+                               memberName1: teamData[1],
+                               memberName2: teamData[2],
+                               projectSummary: teamData[3],
+                               emblem: teamData[4]
+                           })
+
+                       }
+                       break;
+                   }
+               case 6:
+                   {
+                       function writeUserData(userId, teamName, memberName1, memberName2, memberName3, projectSummary, emblem) {
+                           firebase.database().ref('users/' + userId).set({
+                               teamName: teamData[0],
+                               memberName1: teamData[1],
+                               memberName2: teamData[2],
+                               memberName3: teamData[3],
+                               projectSummary: teamData[4],
+                               emblem: teamData[5]
+                           })
+
+                       }
+                       break;
+                   }
+               case 7:
+                   {
+                       function writeUserData(userId, teamName, memberName1, memberName2, memberName3, memberName4, projectSummary, emblem) {
+                           firebase.database().ref('users/' + userId).set({
+                               teamName: teamData[0],
+                               memberName1: teamData[1],
+                               memberName2: teamData[2],
+                               memberName3: teamData[3],
+                               memberName3: teamData[4],
+                               projectSummary: teamData[5],
+                               emblem: teamData[6]
+                           })
+
+                       }
+                       break;
+                   }
+           }
