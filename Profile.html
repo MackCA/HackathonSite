@@ -8,7 +8,7 @@
      <link rel="stylesheet" type="text/css" href="\vendors\css\normalize.css">
      <link rel="stylesheet" type="text/css" href="\vendors\css\grid.css">
      <link rel="stylesheet" type="text/css" href="\vendors\css\ionicons.min.css">
-     <link rel="stylesheet" type="text/css" href="\resources\css\style.css">
+     <link rel="stylesheet" type="text/css" href="\resources\css\style2.css">
      <link rel="stylesheet" type="text/css" href="\resources\css\queries.css">
      <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400" rel="stylesheet">
      <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.6.0/firebaseui.css" />
@@ -35,7 +35,15 @@
              </div>
          </div>
          <div class="row">
-             <form method="post" action="#" class="registration-form">
+             <div class="col span-1-of-3">
+                 <label></label>
+             </div>
+             <div class="col span-2-of-4">
+                 <div class="alert" align="center">Your registration has been sent</div>
+             </div>
+         </div>
+         <div class="row">
+             <form method="POST" action="#" class="registration-form" id="registrationForm">
                  <div class="row">
                      <div class="col span-1-of-3">
                          <label for="team-name">Team Name*</label>
@@ -78,10 +86,10 @@
                  </div>
                  <div class="row">
                      <div class="col span-1-of-3">
-                         <label for="description-input">Project Description*</label>
+                         <label for="project-summary">Project Description*</label>
                      </div>
                      <div class="col span-2-of-3">
-                         <textarea name="project-description" id="description-input" rows="4" cols="30" required>Enter a brief project description.</textarea>
+                         <textarea name="project-description" id="project-summary" rows="4" cols="30" required></textarea>
                      </div>
                  </div>
                  <div class="row">
@@ -97,15 +105,13 @@
                          <label></label>
                      </div>
                      <div class="col span-1-of-3" align="center">
-                         <input type="submit" value="Submit" onclick="profileUpdate()">
+                         <input type="submit" value="Submit">
                      </div>
-
                      <div class="col span-1-of-3" align="center">
                          <input type="submit" value="Sign out" onclick="logout()" class="logout" formnovalidate>
                      </div>
                  </div>
              </form>
-
          </div>
      </section>
      <!-----------Footer---------------------------------------------------------------------------->
