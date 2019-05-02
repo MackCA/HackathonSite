@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script>
+        var simpleText = "hello_world";
+        var simple = ["begin", "text", "low", "mid", "7", "er", "jkhgf"];
+        var names = ["myLink1", "myLink2", "myLink3", "myLink4", "myLink5"];
+        // var splitText = dataArray[0];
+        var html =
+            '<div class="row">' +
+            '<div class="profile">' +
+            '<div class="col span-1-of-4">' +
+            '<img src="\resources\img\Sith Emblem.jpg" alt="Team 1 Emblem" class="team-emblem-profile">' +
+            '</div>' +
+            '<div class="col span-1-of-4">' +
+            '<h3 id="teamListHead1"></h3>' +
+            '<div class="team-listing">' +
+            '<h4 id="member1"><ion-icon name="person-add" class="icon-small"></ion-icon>Team Member</h4>' +
+            '<h4 id="member2"><ion-icon name="person-add" class="icon-small"></ion-icon>Team Member</h4>' +
+            '<h4 id="member3"><ion-icon name="person-add" class="icon-small"></ion-icon>Team Member</h4>' +
+            '<h4 id="member4"><ion-icon name="person-add" class="icon-small"></ion-icon>Team Member</h4>' +
+            '<br>' + '<div class="rw-ui-container" data-title="team-1-rating"></div>' + '</div>' + '</div>' +
+            '<div class="col span-2-of-4" class="project-summary">' + '<h3>Project Description</h3>' +
+            '<p>Summary</p>' + '</div>' + '</div>' + '</div>';
+       
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="sticky">
+            <div class="row">
+                <a href="https://www.sunysuffolk.edu/">
+                    <img src="\resources\img\SCCC_LOGO_WHITE_150.png" alt="SCCC Logo" class="logo">
+                    <img src="\resources\img\SCCC Logo.png" alt="SCCC Logo" class="logo-blue">
+                </a>
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#team-profiles">Teams</a></li>
+                    <li><a href="#rules">Rules</a></li>
+                    <li><a href="#register">Register</a></li>
+                    <li><a href="#majors">Showcase</a></li>
+                    <li><a href="#">Top</a></li>
+                </ul>
+                <a class="mobile-nav-icon js--nav-icon"><i class="ion-close-round"></i></a>
+            </div>
+        </nav>
+
+        <div class="title-text-box" class="col span 1-out-of-1">
+            <h1>Hackathon<br>Spring 2019</h1>
+            <a class="btn btn-full js--scroll-to-register" href="#">Register</a>
+            <a class="btn btn-ghost" onclick="showLogin()" href="#">Login</a>
+        </div>
+        <div class="login-form-box" id="login-box" display="none">
+            <h3 class="sign-in" align="center">Sign in</h3>
+            <form class="login-form">
+                <input class="email-login" type="email" id="login-email" align="center" placeholder="Email">
+                <input class="pass-login" type="password" id="login-pwd" align="center" placeholder="Password">
+                <input type="submit" value="Sign in" onclick="login()" href="#">
+                <a href="#" class="forgot" align="center" onclick="passwordReset()">Forgot Password?</a>
+            </form>
+        </div>
+    </header>
+    <section class="section-rules js--section-rules" id="rules">
+        <a id="myLink" href=index.html></a>
+        <div class="row">
+            <h2>Competition Guidelines</h2>
+            <p class="long-copy">
+                SCCC's Computer Science department is holding it's first Hackathon - here's how it works.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-4 box">
+                <ion-icon name="people" class="icon-big"></ion-icon>
+                <h3>Teamwork</h3>
+                <p>Form a team of up to 4 members to collaborate on a joint project. You can also go solo if thats your style.
+                </p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <ion-icon name="bulb" class="icon-big"></ion-icon>
+                <h3>Creativity is Key</h3>
+                <p>The theme for this event is creativity in coding. This gives you wide latitude to build what motivates you.
+                </p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <ion-icon name="microphone" class="icon-big"></ion-icon>
+                <h3>Presentation</h3>
+                <p>You will present your project in front of a general audience. The audience will then fill out a poll about your project. Your project will be judged by the CS Professors.
+                </p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <ion-icon name="ribbon" class="icon-big"></ion-icon>
+                <h3>Sweet victory</h3>
+                <p>The audience will be polled on what their favorite project was and the projects judged most highly by the professors will be declared winners.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section-teams" id="majors">
+        <ul class="teams-showcase clearfix">
+            <li class="majors">
+                <div class="major-text">
+                    <p class="career-data">Salary Range: $22,000 -$91,791<br>National Average: $40,100<br>Projected Growth Rate: +16%
+                </div>
+                <figure class="team-emblem">
+                    <img src="\resources\img\psy.png" alt="Psychology Emblem" rel="emblem">
+                    <figcaption class="captions">Major: Psychology</figcaption>
+                </figure>
+            </li>
+            <li class="majors">
+                <div class="major-text">
+                    <p class="career-data">Salary Range: $65,000 - $250k+ <br>see: www.levels.fyi<br>National Average: $105,590<br>Projected Growth Rate: +24%
+                </div>
+                <figure class="team-emblem">
+                    <img src="\resources\img\.png" alt="Computer Science Emblem" rel="emblem">
+                    <figcaption class="captions">Major: Computer Science</figcaption>
+                </figure>
+            </li>
+            <li class="majors">
+                <div class="major-text">
+                    <p class="career-data">Salary Range: $33,800 -$115,090 <br>National Average: $40,020<br>Projected Growth Rate: +3%
+                </div>
+                <figure class="team-emblem">
+                    <img src="\resources\img\la.png" alt="Liberal Arts Emblem" rel="emblem">
+                    <figcaption class="captions">Major: Liberal Arts</figcaption>
+                </figure>
+            </li>
+            <li class="majors">
+                <div class="major-text">
+                    <p class="career-data">Salary Range: $37,000 - $55,000<br>National Average: $50,940<br>Projected Growth Rate: +15%
+                </div>
+                <figure class="team-emblem">
+                    <img src="\resources\img\.png" alt="Paralegal Emblem" rel="emblem">
+                    <figcaption class="captions">Major: Paralegal </figcaption>
+                </figure>
+            </li>
+        </ul>
+        <ul class="teams-showcase clearfix">
+            <li class="majors">
+                <div class="major-text">
+                    <p class="career-data">Salary Range: $35,492-$98,608<br>National Average:50,290<br>Projected Growth Rate: +10%
+                </div>
+                <figure class="team-emblem">
+                    <img src="\resources\img\bus1.png" alt="Business Emblem" rel="emblem">
+                    <figcaption class="captions">Major: Business</figcaption>
+                </figure>
+            </li>
+            <li class="majors">
+                <div class="major-text">
+                    <p class="career-data">Salary Range: $48,155 - $89,855<br>National Average: $56,350<br>Projected Growth Rate: +15%
+                </div>
+                <figure class="team-emblem">
+                    <img src="\resources\img\rn.png" alt="Nursing Emblem" rel="emblem">
+                    <figcaption class="captions">Major: Nursing</figcaption>
+                </figure>
+            </li>
+            <li class="majors">
+                <div class="major-text">
+                    <p class="career-data">Salary Range: $43,020 - $122,220<br>National Average: $70,500<br>Projected Growth Rate: +10%
+                </div>
+                <figure class="team-emblem">
+                    <img src="\resources\img\acc.png" alt="Accounting and Bookeeping Emblem" rel="emblem">
+                    <figcaption class="captions">Major: Accounting and Bookeeping</figcaption>
+                </figure>
+            </li>
+            <li class="majors">
+                <div class="major-text">
+                    <p class="career-data">Salary Range: $29,610-$85,760<br>National Average: $50,370<br>Projected Growth Rate: +4%
+                </div>
+                <figure class="team-emblem">
+                    <img src="\resources\img\.png" alt="Graphic Design Emblem" rel="emblem">
+                    <figcaption class="captions">Major: Graphic Design</figcaption>
+                </figure>
+            </li>
+        </ul>
+    </section>
+    <section id="myLink">
+        <script>
+      window.onload=init();
+        </script>
+        <div class="row">
+
+        </div>
+    </section>
+</body></html>

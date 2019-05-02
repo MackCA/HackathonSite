@@ -183,7 +183,7 @@
                                filled: i < scope.ratingValue
                            });
                        }
-                   };
+                   }
                    scope.toggle = function (index) {
                        if (scope.readonly == undefined || scope.readonly === false) {
                            scope.ratingValue = index + 1;
@@ -200,5 +200,22 @@
                }
            };
        }
-   })();
+   });
 
+
+   //  <!------------------------------------------------------------------------------>
+   //   <!------------------------------Team Listing Population-------------------------->
+   //   <!------------------------------------------------------------------------------>
+
+   //var admin = require("firebase-admin");
+
+   //var serviceAccount = require("path/to/serviceAccountKey.json");
+
+   //  admin.initializeApp({
+   //       credential: admin.credential.cert(serviceAccount),
+   //        databaseURL: "https://sccc-hackathon-spring-2019.firebaseio.com"
+   //     });
+
+
+   //  
+   

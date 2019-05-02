@@ -2,9 +2,7 @@
 <html>
 
 <head>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Hackathon Spring 2019</title>
     <link rel="stylesheet" type="text/css" href="\vendors\css\normalize.css">
     <link rel="stylesheet" type="text/css" href="\vendors\css\grid.css">
@@ -24,8 +22,42 @@
     <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-</head>
+    <script type="text/javascript">
+        //   var teamArray = ["hi"];
+        //  var userDataRef = firebase.database().data.ref.root;
+        //  userDataRef.once("value").then(function(snapshot) {
+        //      snapshot.forEach(function(childSnapshot) {
+        //                  var key = childSnapshot.key;
+        //                var childData = teamArray.push(childSnapshot.val());
+        //              var teamNameVal = teamArray.push(childSnapshot.val().teamName);
+        //            var member1Val = teamArray.push(childSnapshot.val().memberName1);
+        //          var member2Val = teamArray.push(childSnapshot.val().memberName2);
+        //        var member3Val = teamArray.push(childSnapshot.val().memberName3);
+        //       var member4Val = teamArray.push(childSnapshot.val().memberName4);
+        //     var projectSummaryVal = teamArray.push(childSnapshot.val().projectSummary);
+        //   var emblemVal = teamArray.push(childSnapshot.val().emblem);
+        var emblemVal = "SithEmblem" + ".jpg";
+        $("#pemblem").attr("src", emblemVal);
 
+
+        var html =
+            '<div class="row">' +
+            '<div class="col span-1-of-4">' +
+            '<img src=emblemVal alt="Team 1 Emblem" class="team-emblem-profile" id="pemblem">' +
+            '</div>' +
+            '<div class="col span-1-of-4">' +
+            '<h3 name="pTeamName"></h3>' +
+            '<div class="team-listing">' +
+            '<h4 class="member1"><ion-icon name="person-add" class="icon-small"></ion-icon>Team Member</h4>' +
+            '<h4 class="member2"><ion-icon name="person-add" class="icon-small"></ion-icon>Team Member</h4>' +
+            '<h4 class="member3"><ion-icon name="person-add" class="icon-small"></ion-icon>Team Member</h4>' +
+            '<h4 class="member4"><ion-icon name="person-add" class="icon-small"></ion-icon>Team Member</h4>' +
+            '<br>' + '<div class="rw-ui-container" data-title="team-1-rating"></div>' + '</div>' + '</div>' +
+            '<div class="col span-2-of-4" class="project-summary">' + '<h3>Project Description</h3>' +
+            '<p name ="projSummary">Summary</p>' + '</div>' + '</div>';
+        // var elemNames = [teamNameVal, member1Val, member2Val, member3Val, member4Val, projectSummaryVal, emblemVal];
+    </script>
+</head>
 
 <body>
     <header>
@@ -61,11 +93,9 @@
             </form>
         </div>
     </header>
-
-
-
     <!-----------RULES---------------------------------------------------------------------------->
     <section class="section-rules js--section-rules" id="rules">
+        <a id="myLink" href=index.html></a>
         <div class="row">
             <h2>Competition Guidelines</h2>
             <p class="long-copy">
@@ -99,13 +129,8 @@
             </div>
         </div>
     </section>
-
-
-
-
     <!-----------TEAMS---------------------------------------------------------------------------->
     <section class="section-teams" id="majors">
-
         <ul class="teams-showcase clearfix">
             <li class="majors">
                 <div class="major-text">
@@ -144,9 +169,6 @@
                 </figure>
             </li>
         </ul>
-
-
-
         <ul class="teams-showcase clearfix">
             <li class="majors">
                 <div class="major-text">
@@ -186,279 +208,31 @@
             </li>
         </ul>
     </section>
-
-
-
-
     <!-----------TEAM PROFILES---------------------------------------------------------------------------->
     <section class="section-team-profiles" id="team-profiles">
         <div class="row">
             <h2>Team Profiles</h2>
         </div>
-        <ul>
-            <li>
-                <div class="row">
-                    <div class="profile">
-                        <div class="col span-1-of-4">
-                            <img src="\resources\img\Sith Emblem.jpg" alt="Team 1 Emblem" class="team-emblem-profile">
-                        </div>
-                        <div class="col span-1-of-4">
-                            <h3>The Sith Empire</h3>
-                            <div class="team-listing">
-
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <div class="rw-ui-container" data-title="team-1-rating"></div>
-                            </div>
-
-                        </div>
-                        <div class="col span-2-of-4" class="project-summary">
-                            <h3>Project Description</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor at justo aliquam finibus. Mauris non magna justo. Curabitur quis consequat ipsum. Phasellus luctus nisi ac tristique vehicula. Morbi faucibus, sapien quis fringilla bibendum, ante elit sagittis dui, a ultricies lorem justo ac leo. Curabitur sit amet pellentesque est. Vivamus et leo metus. Fusce dignissim a sapien vitae facilisis. Vestibulum finibus sollicitudin felis eget malesuada.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-
-
-
-                <div class="row">
-                    <div class="profile">
-                        <div class="col span-1-of-4">
-                            <img src="\resources\img\Sith Emblem.jpg" alt="Team 1 Emblem" class="team-emblem-profile">
-                        </div>
-                        <div class="col span-1-of-4">
-                            <h3>The Sith Empire</h3>
-                            <div class="team-listing">
-
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <div class="rw-ui-container" data-title="team-2-rating"></div>
-                            </div>
-
-                        </div>
-                        <div class="col span-2-of-4" class="project-summary">
-                            <h3>Project Description</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor at justo aliquam finibus. Mauris non magna justo. Curabitur quis consequat ipsum. Phasellus luctus nisi ac tristique vehicula. Morbi faucibus, sapien quis fringilla bibendum, ante elit sagittis dui, a ultricies lorem justo ac leo. Curabitur sit amet pellentesque est. Vivamus et leo metus. Fusce dignissim a sapien vitae facilisis. Vestibulum finibus sollicitudin felis eget malesuada.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-
-
-
-                <div class="row">
-                    <div class="profile">
-                        <div class="col span-1-of-4">
-                            <img src="\resources\img\Sith Emblem.jpg" alt="Team 1 Emblem" class="team-emblem-profile">
-                        </div>
-                        <div class="col span-1-of-4">
-                            <h3>The Sith Empire</h3>
-                            <div class="team-listing">
-
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <div class="rw-ui-container" data-title="team-3-rating"></div>
-                            </div>
-
-                        </div>
-                        <div class="col span-2-of-4" class="project-summary">
-                            <h3>Project Description</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor at justo aliquam finibus. Mauris non magna justo. Curabitur quis consequat ipsum. Phasellus luctus nisi ac tristique vehicula. Morbi faucibus, sapien quis fringilla bibendum, ante elit sagittis dui, a ultricies lorem justo ac leo. Curabitur sit amet pellentesque est. Vivamus et leo metus. Fusce dignissim a sapien vitae facilisis. Vestibulum finibus sollicitudin felis eget malesuada.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-
-
-                <div class="row">
-                    <div class="profile">
-                        <div class="col span-1-of-4">
-                            <img src="\resources\img\Sith Emblem.jpg" alt="Team 1 Emblem" class="team-emblem-profile">
-                        </div>
-                        <div class="col span-1-of-4">
-                            <h3>The Sith Empire</h3>
-                            <div class="team-listing">
-
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <div class="rw-ui-container" data-title="team-4-rating"></div>
-                            </div>
-
-                        </div>
-                        <div class="col span-2-of-4" class="project-summary">
-                            <h3>Project Description</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor at justo aliquam finibus. Mauris non magna justo. Curabitur quis consequat ipsum. Phasellus luctus nisi ac tristique vehicula. Morbi faucibus, sapien quis fringilla bibendum, ante elit sagittis dui, a ultricies lorem justo ac leo. Curabitur sit amet pellentesque est. Vivamus et leo metus. Fusce dignissim a sapien vitae facilisis. Vestibulum finibus sollicitudin felis eget malesuada.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-
-
-                <div class="row">
-                    <div class="profile">
-                        <div class="col span-1-of-4">
-                            <img src="\resources\img\Sith Emblem.jpg" alt="Team 1 Emblem" class="team-emblem-profile">
-                        </div>
-                        <div class="col span-1-of-4">
-                            <h3>The Sith Empire</h3>
-                            <div class="team-listing">
-
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <div class="rw-ui-container" data-title="team-5-rating"></div>
-                            </div>
-
-                        </div>
-                        <div class="col span-2-of-4" class="project-summary">
-                            <h3>Project Description</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor at justo aliquam finibus. Mauris non magna justo. Curabitur quis consequat ipsum. Phasellus luctus nisi ac tristique vehicula. Morbi faucibus, sapien quis fringilla bibendum, ante elit sagittis dui, a ultricies lorem justo ac leo. Curabitur sit amet pellentesque est. Vivamus et leo metus. Fusce dignissim a sapien vitae facilisis. Vestibulum finibus sollicitudin felis eget malesuada.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-
-
-                <div class="row">
-                    <div class="profile">
-                        <div class="col span-1-of-4">
-                            <img src="\resources\img\Sith Emblem.jpg" alt="Team 1 Emblem" class="team-emblem-profile">
-                        </div>
-                        <div class="col span-1-of-4">
-                            <h3>The Sith Empire</h3>
-                            <div class="team-listing">
-
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <div class="rw-ui-container" data-title="team-6-rating"></div>
-                            </div>
-
-                        </div>
-                        <div class="col span-2-of-4" class="project-summary">
-                            <h3>Project Description</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor at justo aliquam finibus. Mauris non magna justo. Curabitur quis consequat ipsum. Phasellus luctus nisi ac tristique vehicula. Morbi faucibus, sapien quis fringilla bibendum, ante elit sagittis dui, a ultricies lorem justo ac leo. Curabitur sit amet pellentesque est. Vivamus et leo metus. Fusce dignissim a sapien vitae facilisis. Vestibulum finibus sollicitudin felis eget malesuada.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-
-
-                <div class="row">
-                    <div class="profile">
-                        <div class="col span-1-of-4">
-                            <img src="\resources\img\Sith Emblem.jpg" alt="Team 1 Emblem" class="team-emblem-profile">
-                        </div>
-                        <div class="col span-1-of-4">
-                            <h3>The Sith Empire</h3>
-                            <div class="team-listing">
-
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <div class="rw-ui-container" data-title="team-7-rating"></div>
-                            </div>
-
-                        </div>
-                        <div class="col span-2-of-4" class="project-summary">
-                            <h3>Project Description</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor at justo aliquam finibus. Mauris non magna justo. Curabitur quis consequat ipsum. Phasellus luctus nisi ac tristique vehicula. Morbi faucibus, sapien quis fringilla bibendum, ante elit sagittis dui, a ultricies lorem justo ac leo. Curabitur sit amet pellentesque est. Vivamus et leo metus. Fusce dignissim a sapien vitae facilisis. Vestibulum finibus sollicitudin felis eget malesuada.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-
-
-                <div class="row">
-                    <div class="profile">
-                        <div class="col span-1-of-4">
-                            <img src="\resources\img\Sith Emblem.jpg" alt="Team 1 Emblem" class="team-emblem-profile">
-                        </div>
-                        <div class="col span-1-of-4">
-                            <h3>The Sith Empire</h3>
-                            <div class="team-listing">
-
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <ion-icon name="person-add" class="icon-small"></ion-icon>
-                                Team Member<br>
-                                <div class="rw-ui-container" data-title="team-8-rating"></div>
-                            </div>
-
-                        </div>
-                        <div class="col span-2-of-4" class="project-summary">
-                            <h3>Project Description</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor at justo aliquam finibus. Mauris non magna justo. Curabitur quis consequat ipsum. Phasellus luctus nisi ac tristique vehicula. Morbi faucibus, sapien quis fringilla bibendum, ante elit sagittis dui, a ultricies lorem justo ac leo. Curabitur sit amet pellentesque est. Vivamus et leo metus. Fusce dignissim a sapien vitae facilisis. Vestibulum finibus sollicitudin felis eget malesuada.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
+        <div>
+            <ul class="profileContainer">
+                <script>
+                    window.onload = function() {
+                        var list = document.getElementsByClassName("profileContainer")[0];
+                        for (var i = 0; i < 7; i++) { //firebase.database().ref("users").getChildrenCount()
+                            var node = document.createElement("LI");
+                            node.innerHTML = html;
+                            node.setAttribute('class', "profile");
+                            var p = document.getElementById("team-profiles").appendChild(node); //.getElementById(); //.insertAdjacentHTML('beforeend', simple[i]);
+                            document.getElementById("pemblem").src = "emblemVal";
+                            list.getElementsByClassName("profile")[i].getElementsByClassName().insertAdjacentHTML('beforeend', "Fantastic");
+                        }
+                    }
+                    //firebase.database().ref("users").numChildren()
+                </script>
+            </ul>
+        </div>
     </section>
-
-
-
     <!-----------REGISTRATION FORM---------------------------------------------------------------------------->
-
     <section class="section-register js--section-register" id="register">
         <div class="row">
             <h2>Register for Hackathon</h2><br>
@@ -482,7 +256,6 @@
                         <input type="password" id="password-register" name="password-register" placeholder="Password" required>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col span-1-of-3">
                         <label>&nbsp;</label>
@@ -494,17 +267,13 @@
             </form>
         </div>
     </section>
-
     <!-----------Footer---------------------------------------------------------------------------->
     <footer>
         <div class="row">
             <p><br><br><br><br>
-
             </p>
         </div>
     </footer>
-
-
     <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
     <script src="https://cdn.firebase.com/libs/firebaseui/3.6.0/firebaseui.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -541,10 +310,7 @@
             rw.src = p + "//" + a + "external" + f + ".js?ck=" + ck;
             s.parentNode.insertBefore(rw, s);
         }(document, new Date(), "script", "rating-widget.com/"));
-
     </script>
     <script src="vendors/js/jquery.waypoints.min.js"></script>
-    <script src="resources/js/index.js"></script>
-</body>
-
-</html>
+    <script src="index.js"></script>
+</body></html>

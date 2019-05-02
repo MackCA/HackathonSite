@@ -80,6 +80,9 @@ h3 {
     padding-top: 20px;
     margin-bottom: 15px;
 }
+h4.{
+    display: inline;
+}
 
 h2:after {
     display: block;
@@ -448,9 +451,7 @@ header {
 }
 
 .forgot {
-    margin-left: 15px;
     font-size: 80%;
-    margin: 0;
 }
 
 input[type=text],

@@ -11,11 +11,6 @@
  var user = firebase.auth().currentUser;
  var userId;
 
-
-
-
-
-
  // Listen for form submit
  document.getElementById('registrationForm').addEventListener('submit', submitForm);
 
@@ -52,7 +47,6 @@
      return document.getElementById(id).value;
  }
 
-
  // Save message to firebase
  function saveTeam(teamName, memberName1, memberName2, memberName3, memberName4, projectSummary, emblem) {
      firebase.auth().onAuthStateChanged(function (user) {
@@ -61,8 +55,6 @@
                  user = firebase.auth().currentUser;
                  this.userId = user.uid;
                  // Reference messages collection
-                 //  var teamsRef = firebase.database().ref('users/' + firebase.auth().currentUser.uid);
-                 //firebase.database().ref('users/' + firebase.auth().currentUser.uid).push();
                  firebase.database().ref('users/' + firebase.auth().currentUser.uid).set({
                      teamName: teamName,
                      memberName1: memberName1,
@@ -79,7 +71,6 @@
 
      )
  }
-
 
 
  //LOGOUT----------------------------
