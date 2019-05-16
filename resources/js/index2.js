@@ -11,6 +11,11 @@
  var user = firebase.auth().currentUser;
  var userId;
 
+
+
+
+
+
  // Listen for form submit
  document.getElementById('registrationForm').addEventListener('submit', submitForm);
 
@@ -47,6 +52,7 @@
      return document.getElementById(id).value;
  }
 
+
  // Save message to firebase
  function saveTeam(teamName, memberName1, memberName2, memberName3, memberName4, projectSummary, emblem) {
      firebase.auth().onAuthStateChanged(function (user) {
@@ -71,6 +77,7 @@
 
      )
  }
+
 
 
  //LOGOUT----------------------------

@@ -2,7 +2,9 @@
 <html>
 
 <head>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Hackathon Spring 2019</title>
     <link rel="stylesheet" type="text/css" href="\vendors\css\normalize.css">
     <link rel="stylesheet" type="text/css" href="\vendors\css\grid.css">
@@ -22,42 +24,8 @@
     <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-    <script type="text/javascript">
-        //   var teamArray = ["hi"];
-        //  var userDataRef = firebase.database().data.ref.root;
-        //  userDataRef.once("value").then(function(snapshot) {
-        //      snapshot.forEach(function(childSnapshot) {
-        //                  var key = childSnapshot.key;
-        //                var childData = teamArray.push(childSnapshot.val());
-        //              var teamNameVal = teamArray.push(childSnapshot.val().teamName);
-        //            var member1Val = teamArray.push(childSnapshot.val().memberName1);
-        //          var member2Val = teamArray.push(childSnapshot.val().memberName2);
-        //        var member3Val = teamArray.push(childSnapshot.val().memberName3);
-        //       var member4Val = teamArray.push(childSnapshot.val().memberName4);
-        //     var projectSummaryVal = teamArray.push(childSnapshot.val().projectSummary);
-        //   var emblemVal = teamArray.push(childSnapshot.val().emblem);
-        var emblemVal = "SithEmblem" + ".jpg";
-        $("#pemblem").attr("src", emblemVal);
-
-
-        var html =
-            '<div class="row">' +
-            '<div class="col span-1-of-4">' +
-            '<img src=emblemVal alt="Team 1 Emblem" class="team-emblem-profile" id="pemblem">' +
-            '</div>' +
-            '<div class="col span-1-of-4">' +
-            '<h3 name="pTeamName"></h3>' +
-            '<div class="team-listing">' +
-            '<h4 class="member1"><ion-icon name="person-add" class="icon-small"></ion-icon>Team Member</h4>' +
-            '<h4 class="member2"><ion-icon name="person-add" class="icon-small"></ion-icon>Team Member</h4>' +
-            '<h4 class="member3"><ion-icon name="person-add" class="icon-small"></ion-icon>Team Member</h4>' +
-            '<h4 class="member4"><ion-icon name="person-add" class="icon-small"></ion-icon>Team Member</h4>' +
-            '<br>' + '<div class="rw-ui-container" data-title="team-1-rating"></div>' + '</div>' + '</div>' +
-            '<div class="col span-2-of-4" class="project-summary">' + '<h3>Project Description</h3>' +
-            '<p name ="projSummary">Summary</p>' + '</div>' + '</div>';
-        // var elemNames = [teamNameVal, member1Val, member2Val, member3Val, member4Val, projectSummaryVal, emblemVal];
-    </script>
 </head>
+
 
 <body>
     <header>
@@ -93,9 +61,11 @@
             </form>
         </div>
     </header>
+
+
+
     <!-----------RULES---------------------------------------------------------------------------->
     <section class="section-rules js--section-rules" id="rules">
-        <a id="myLink" href=index.html></a>
         <div class="row">
             <h2>Competition Guidelines</h2>
             <p class="long-copy">
@@ -129,12 +99,26 @@
             </div>
         </div>
     </section>
+
+
+
+
     <!-----------TEAMS---------------------------------------------------------------------------->
     <section class="section-teams" id="majors">
+
         <ul class="teams-showcase clearfix">
             <li class="majors">
                 <div class="major-text">
-                    <p class="career-data">Salary Range: $22,000 -$91,791<br>National Average: $40,100<br>Projected Growth Rate: +16%
+                    <p class="career-data">Salary Range: $22,000 - $91,791<br>National Average: $40,100<br>Projected Growth Rate: +16%</p><br>
+                    Common Job Titles:
+                    <ul>
+                        &bull;Social Worker
+                        <br>&bull;Teacher
+                        <br>&bull;Councilors
+                        <br>&bull;Funeral Service Managers
+                        <br>&bull;Administrative Assistant
+                        <br>&bull;Mail Superintendents
+                    </ul>
                 </div>
                 <figure class="team-emblem">
                     <img src="\resources\img\psy.png" alt="Psychology Emblem" rel="emblem">
@@ -143,7 +127,16 @@
             </li>
             <li class="majors">
                 <div class="major-text">
-                    <p class="career-data">Salary Range: $65,000 - $250k+ <br>see: www.levels.fyi<br>National Average: $105,590<br>Projected Growth Rate: +24%
+                    <p class="career-data">Salary Range: $65,000 - $250k+ <br>see: www.levels.fyi<br>National Average: $105,590<br>Projected Growth Rate: +24%</p><br>
+                    Common Job Titles:
+                    <ul>
+                        &bull;Software Engineer
+                        <br>&bull;Database Administrator
+                        <br>&bull;Web Developer
+                        <br>&bull;Computer Research Scientists
+                        <br>&bull;Computer Systems Managers
+                        <br>&bull;IT Project Manager
+                    </ul>
                 </div>
                 <figure class="team-emblem">
                     <img src="\resources\img\CS.png" alt="Computer Science Emblem" rel="emblem">
@@ -152,7 +145,16 @@
             </li>
             <li class="majors">
                 <div class="major-text">
-                    <p class="career-data">Salary Range: $33,800 -$115,090 <br>National Average: $40,020<br>Projected Growth Rate: +3%
+                    <p class="career-data">Salary Range: $33,800 - $115,090 <br>National Average: $40,020<br>Projected Growth Rate: +3%</p><br>
+                    Common Job Titles:
+                    <ul>
+                        &bull;Civil Service
+                        <br>&bull;Human Resources Coordinator
+                        <br>&bull;Sales Manager
+                        <br>&bull;Teacher
+                        <br>&bull;Office Manager
+                        <br>&bull;General Manager
+                    </ul>
                 </div>
                 <figure class="team-emblem">
                     <img src="\resources\img\la.png" alt="Liberal Arts Emblem" rel="emblem">
@@ -161,7 +163,16 @@
             </li>
             <li class="majors">
                 <div class="major-text">
-                    <p class="career-data">Salary Range: $37,000 - $55,000<br>National Average: $50,940<br>Projected Growth Rate: +15%
+                    <p class="career-data">Salary Range: $37,000 - $55,000<br>National Average: $50,940<br>Projected Growth Rate: +15%</p><br>
+                    Common Job Titles:
+                    <ul>
+                        &bull;Paralegal
+                        <br>&bull;Administrative Assistant
+                        <br>&bull;Law Clerk
+                        <br>&bull;Legal Assistant
+                        <br>&bull;Office Manager
+                        <br>&bull;Legal Secretary
+                    </ul>
                 </div>
                 <figure class="team-emblem">
                     <img src="\resources\img\pl.png" alt="Paralegal Emblem" rel="emblem">
@@ -169,10 +180,22 @@
                 </figure>
             </li>
         </ul>
+
+
+
         <ul class="teams-showcase clearfix">
             <li class="majors">
                 <div class="major-text">
-                    <p class="career-data">Salary Range: $35,492-$98,608<br>National Average:50,290<br>Projected Growth Rate: +10%
+                    <p class="career-data">Salary Range: $35,492 - $98,608<br>National Average:$50,290<br>Projected Growth Rate: +10%</p><br>
+                    Common Job Titles:
+                    <ul>
+                        &bull;Assistant Controller
+                        <br>&bull;Administrative Assistant
+                        <br>&bull;Account Manager
+                        <br>&bull;Operations Manager
+                        <br>&bull;General Manager
+                        <br>&bull;Sales Manager
+                    </ul>
                 </div>
                 <figure class="team-emblem">
                     <img src="\resources\img\bus1.png" alt="Business Emblem" rel="emblem">
@@ -181,7 +204,16 @@
             </li>
             <li class="majors">
                 <div class="major-text">
-                    <p class="career-data">Salary Range: $48,155 - $89,855<br>National Average: $56,350<br>Projected Growth Rate: +15%
+                    <p class="career-data">Salary Range: $48,155 - $89,855<br>National Average: $56,350<br>Projected Growth Rate: +15%</p><br>
+                    Common Job Titles:
+                    <ul>
+                        &bull;Registered Nurse
+                        <br>&bull;Triage Nurse
+                        <br>&bull;RN Unit Manager
+                        <br>&bull;Nurse Administrator
+                        <br>&bull;General Nurse Practitioner
+                        <br>&bull;Certified RN Anesthetist
+                    </ul>
                 </div>
                 <figure class="team-emblem">
                     <img src="\resources\img\rn.png" alt="Nursing Emblem" rel="emblem">
@@ -190,16 +222,34 @@
             </li>
             <li class="majors">
                 <div class="major-text">
-                    <p class="career-data">Salary Range: $43,020 - $122,220<br>National Average: $70,500<br>Projected Growth Rate: +10%
+                    <p class="career-data">Salary Range: $43,020 - $122,220<br>National Average: $70,500<br>Projected Growth Rate: +10%</p><br>
+                    Common Job Titles:
+                    <ul>
+                        &bull;Financial Analyst
+                        <br>&bull;Accounting Director
+                        <br>&bull;Accountant
+                        <br>&bull;Controller
+                        <br>&bull;Auditor
+                        <br>&bull;Finance Manager
+                    </ul>
                 </div>
                 <figure class="team-emblem">
                     <img src="\resources\img\acc.png" alt="Accounting and Bookeeping Emblem" rel="emblem">
-                    <figcaption class="captions">Major: Accounting and Bookeeping</figcaption>
+                    <figcaption class="captions">Major: Accounting</figcaption>
                 </figure>
             </li>
             <li class="majors">
                 <div class="major-text">
-                    <p class="career-data">Salary Range: $29,610-$85,760<br>National Average: $50,370<br>Projected Growth Rate: +4%
+                    <p class="career-data">Salary Range: $29,610 - $85,760<br>National Average: $50,370<br>Projected Growth Rate: +4%</p><br>
+                    Common Job Titles:
+                    <ul>
+                        &bull;Graphic Designer
+                        <br>&bull;Art Director
+                        <br>&bull;Design Engineer
+                        <br>&bull;Front-End Web Developer
+                        <br>&bull;User Interaction Designer
+                        <br>&bull;Web Designer
+                    </ul>
                 </div>
                 <figure class="team-emblem">
                     <img src="\resources\img\gd.png" alt="Graphic Design Emblem" rel="emblem">
@@ -208,31 +258,146 @@
             </li>
         </ul>
     </section>
+
+
+
+
     <!-----------TEAM PROFILES---------------------------------------------------------------------------->
+
+
     <section class="section-team-profiles" id="team-profiles">
         <div class="row">
             <h2>Team Profiles</h2>
         </div>
-        <div>
-            <ul class="profileContainer">
-                <script>
-                    window.onload = function() {
-                        var list = document.getElementsByClassName("profileContainer")[0];
-                        for (var i = 0; i < 7; i++) { //firebase.database().ref("users").getChildrenCount()
-                            var node = document.createElement("LI");
-                            node.innerHTML = html;
-                            node.setAttribute('class', "profile");
-                            var p = document.getElementById("team-profiles").appendChild(node); //.getElementById(); //.insertAdjacentHTML('beforeend', simple[i]);
-                            document.getElementById("pemblem").src = "emblemVal";
-                            list.getElementsByClassName("profile")[i].getElementsByClassName().insertAdjacentHTML('beforeend', "Fantastic");
-                        }
-                    }
-                    //firebase.database().ref("users").numChildren()
-                </script>
-            </ul>
-        </div>
+        <ul>
+            <li>
+                <div class="row">
+                    <div class="profile">
+                        <div class="col span-1-of-4">
+                            <img src="\resources\img\BlueEmbers.jpg" alt="Team 1 Emblem" class="team-emblem-profile">
+                        </div>
+                        <div class="col span-1-of-4">
+
+                            <h3 id="teamListHead1">Blue Embers</h3>
+                            <div class="team-listing">
+
+                                <h4 id="member1">
+                                    <ion-icon name="person-add" class="icon-small"></ion-icon>Raj Bedi
+                                </h4>
+                                <h4 id="member2">
+                                    <ion-icon name="person-add" class="icon-small"></ion-icon>Naqi Haider
+                                </h4>
+                                <br>
+                                <div class="rw-ui-container" data-title="BlueEmbers-rating"></div>
+                            </div>
+                        </div>
+                        <div class="col span-2-of-4" class="project-summary">
+                            <h3>Project Description</h3>
+                            <p>Text Based Adventure game where you can choose your own story by the choices given to the user.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+
+
+
+                <div class="row">
+                    <div class="profile">
+                        <div class="col span-1-of-4">
+                            <img src="\resources\img\R2EM.png" alt="R2EM Emblem" class="team-emblem-profile">
+                        </div>
+                        <div class="col span-1-of-4">
+                            <h3>R<sup>2</sup>EM</h3>
+                            <div class="team-listing">
+
+                                <h4 id="member1">
+                                    <ion-icon name="person-add" class="icon-small"></ion-icon>Michael Campos
+                                </h4>
+                                <h4 id="member2">
+                                    <ion-icon name="person-add" class="icon-small"></ion-icon>Elijuwon Mitthell
+                                </h4>
+                                <h4 id="member3">
+                                    <ion-icon name="person-add" class="icon-small"></ion-icon>Richard Doerzbacher
+                                </h4>
+                                <h4 id="member4">
+                                    <ion-icon name="person-add" class="icon-small"></ion-icon>Robert Cabrera
+                                </h4>
+                                <br>
+                                <div class="rw-ui-container" data-title="R2EM-rating"></div>
+                            </div>
+
+                        </div>
+                        <div class="col span-2-of-4" class="project-summary">
+                            <h3>Project Description</h3>
+                            <p> A social media application for college students to CONNECT with students majoring in the same subject and CONNECT with professional people in the field.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="row">
+                    <div class="profile">
+                        <div class="col span-1-of-4">
+                            <img src="\resources\img\hurri.jpg" alt="Guidi Emblem" class="team-emblem-profile">
+                        </div>
+                        <div class="col span-1-of-4">
+                            <h3>Matthew Guidi</h3>
+                            <div class="team-listing">
+
+                                <h4 id="member1">
+                                    <ion-icon name="person-add" class="icon-small"></ion-icon>Matthew Guidi
+                                </h4>
+                                <br>
+                                <div class="rw-ui-container" data-title="Guidi-rating"></div>
+                            </div>
+
+                        </div>
+                        <div class="col span-2-of-4" class="project-summary">
+                            <h3>Project Description</h3>
+                            <p> Everyone's going to love it. It's really great.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+            <li>
+                <div class="row">
+                    <div class="profile">
+                        <div class="col span-1-of-4">
+                            <img src="\resources\img\smiley.png" alt="Team 4 Emblem" class="team-emblem-profile">
+                        </div>
+                        <div class="col span-1-of-4">
+                            <h3>James Lerner</h3>
+                            <div class="team-listing">
+
+                                <h4 id="member1">
+                                    <ion-icon name="person-add" class="icon-small"></ion-icon>James Lerner
+                                </h4>
+                                <br>
+                                <div class="rw-ui-container" data-title="Lerner-rating"></div>
+                            </div>
+
+                        </div>
+                        <div class="col span-2-of-4" class="project-summary">
+                            <h3>Project Description</h3>
+                            <p> Yay
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+        </ul>
     </section>
+
+
+
     <!-----------REGISTRATION FORM---------------------------------------------------------------------------->
+
     <section class="section-register js--section-register" id="register">
         <div class="row">
             <h2>Register for Hackathon</h2><br>
@@ -256,6 +421,7 @@
                         <input type="password" id="password-register" name="password-register" placeholder="Password" required>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col span-1-of-3">
                         <label>&nbsp;</label>
@@ -267,13 +433,17 @@
             </form>
         </div>
     </section>
+
     <!-----------Footer---------------------------------------------------------------------------->
     <footer>
         <div class="row">
             <p><br><br><br><br>
+
             </p>
         </div>
     </footer>
+
+
     <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
     <script src="https://cdn.firebase.com/libs/firebaseui/3.6.0/firebaseui.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -312,5 +482,5 @@
         }(document, new Date(), "script", "rating-widget.com/"));
     </script>
     <script src="vendors/js/jquery.waypoints.min.js"></script>
-    <script src="index.js"></script>
+    <script src="resources/js/index.js"></script>
 </body></html>

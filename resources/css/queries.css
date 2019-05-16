@@ -9,6 +9,13 @@
         padding: 0 2%
     }
 
+    .major-text {
+        font-size: 75%;
+        vertical-align: top;
+        text-align: left;
+        padding: 0;
+    }
+
 }
 
 
@@ -43,7 +50,13 @@
 
     .login-form-box {
         margin-top: 40%;
+    }
 
+    .major-text {
+        font-size: 65%;
+        vertical-align: top;
+        text-align: left;
+        padding: 0;
     }
 }
 
@@ -147,6 +160,12 @@
     .captions {
         font-size: 90%
     }
+
+    .major-text {
+        font-size: 50%;
+        vertical-align: top;
+        text-align: left;
+    }
 }
 
 /*Small phones from 0 to 480px*/
@@ -165,6 +184,13 @@
 
     .login-form-box {
         width: 100%;
+    }
+
+    .major-text {
+        font-size: 35%;
+        text-align: left;
+        padding: 0;
+        margin: -15px;
     }
 
 }
