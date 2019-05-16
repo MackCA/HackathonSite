@@ -183,7 +183,7 @@
                                filled: i < scope.ratingValue
                            });
                        }
-                   };
+                   }
                    scope.toggle = function (index) {
                        if (scope.readonly == undefined || scope.readonly === false) {
                            scope.ratingValue = index + 1;
@@ -200,5 +200,49 @@
                }
            };
        }
-   })();
+   });
 
+
+   //  <!------------------------------------------------------------------------------>
+   //   <!------------------------------Team Listing Population-------------------------->
+   //   <!------------------------------------------------------------------------------>
+
+   window.onload = function () {
+       var dbdata = ["hi"];
+       var userDataRef = firebase.database();
+       userDataRef.once("value").then(function (snapshot) {
+           snapshot.forEach(function (childSnapshot) {
+               var key = childSnapshot.key;
+               var childData = dbdata.push(childSnapshot.val());
+               var teamNameVal = dbdata.push(childSnapshot.val().teamName);
+               var member1Val = dbdata.push(childSnapshot.val().memberName1);
+               var member2Val = dbdata.push(childSnapshot.val().memberName2);
+               var member3Val = dbdata.push(childSnapshot.val().memberName3);
+               var member4Val = dbdata.push(childSnapshot.val().memberName4);
+               var projectSummaryVal = dbdata.push(childSnapshot.val().projectSummary);
+               var emblemVal = dbdata.push(childSnapshot.val().emblem);
+
+
+               //for(var i=0; i<dbData.length; i++){
+
+               document.getElementById("teamListHead1").innerHTML = dbData[0];
+               document.getElementById("").innerHTML = dbData[i];
+               document.getElementById("").innerHTML = dbData[i];
+               document.getElementById("").innerHTML = dbData[i];
+               document.getElementById("").innerHTML = dbData[i];
+               document.getElementById("").innerHTML = dbData[i];
+               document.getElementById("").innerHTML = dbData[i];
+               // }
+               var teamData = [];
+               document.getElementById("teamListHead1").innerHTML = teamNameVal.value; //(i + 1) + ": " + array[i];
+               // $("#teamName").append(teamNameVal);
+               // $("#member1").append(member1Val);
+
+
+
+               // document.getElementById("teamListHead1").innerHTML += "Hi"; //(i + 1) + ": " + array[i];
+
+               console.log(dbdata[0], dbdata[1], dbdata['cat'], dbdata['']);
+           });
+       });
+   }

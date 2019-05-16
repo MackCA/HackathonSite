@@ -1,66 +1,93 @@
-document.getElementById("registration-form").addEventListener('submit', profileUpdate);
+ // Initialize Firebase
+ var config = {
+     apiKey: "AIzaSyCNzDj-mtM8EeSVp1oX1YTwJoih-qdUxYI",
+     authDomain: "sccc-hackathon-spring-2019.firebaseapp.com",
+     databaseURL: "https://sccc-hackathon-spring-2019.firebaseio.com",
+     projectId: "sccc-hackathon-spring-2019",
+     storageBucket: "sccc-hackathon-spring-2019.appspot.com",
+     messagingSenderId: "792531230283"
+ };
+ firebase.initializeApp(config);
+ var user = firebase.auth().currentUser;
+ var userId;
 
 
 
 
-var database = firebase.database();
-//var teamList = [];
-///get User Profile
-var user = firebase.auth().currentUser;
-var teamName, memberName1, memberName2, memberName3, projectSummary, emblem, uid, emailVerified;
-
-if (user != null) {
-    teamName: user.teamName;
-    memberName1: user.memberName1;
-    memberName2: user.memberName1;
-    memberName3: user.memberName1;
-    memberName3: user.memberName1;
-    projectSummary: user.projectSummary;
-    emblem = user.emblem;
-    emailVerified = user.emailVerified;
-    uid = user.uid; // The user's ID, unique to the Firebase project. Do NOT use
-    // this value to authenticate with your backend server, if
-    // you have one. Use User.getToken() instead.
-}
-// https: //sccc-hackathon-spring-2019.firebaseio.com/
 
 
+ // Listen for form submit
+ document.getElementById('registrationForm').addEventListener('submit', submitForm);
 
-function profileUpdate() {
-    // Get a reference to the database service
-    var databaseRef = firebase.database().ref('users');
+ // Submit form
+ function submitForm(e) {
+     e.preventDefault();
 
-    function submitData(e) {
-        e.preventDefault();
-        var teamData = [];
+     // Get values
+     var teamName = getInputVal('team-name');
+     var memberName1 = getInputVal('member-name-1');
+     var memberName2 = getInputVal('member-name-2');
+     var memberName3 = getInputVal('member-name-3');
+     var memberName4 = getInputVal('member-name-4');
+     var projectSummary = getInputVal('project-summary');
+     var emblem = getInputVal('emblem-input');
 
-        //Collect form data and put into an array 'teamData'
-        function setTeamData() {
+     // Save message
+     saveTeam(teamName, memberName1, memberName2, memberName3, memberName4, projectSummary, emblem);
 
-            var fields = ['team-name', 'member-name-1', 'member-name-2', 'member-name-3', 'member-name-4', 'description-input', 'emblem-input'];
+     // Show alert
+     document.querySelector('.alert').style.display = 'block';
 
-            for (var i = 0; i < fields.length; i++) {
-                if (document.getElementById(fields[i]).value != null) {
-                    var teamDataUpdate = teamData.push(document.getElementById(fields[i]).value);
-                }
-            }
-            var formData = JSON.stringify($("teamData").serializeArray());
-            //teamList.push(teamData);
-        }
-        var newDataref = databaseRef.push();
-        newDataref.set({
-            formData
-        })
-    }
-}
+     // Hide alert after 3 seconds
+     setTimeout(function () {
+         document.querySelector('.alert').style.display = 'none';
+     }, 3000);
 
-function logout() {
-    firebase.auth().signOut().then(function () {
-        // Sign-out successful.
-        window.alert("You are now logged out.");
-        window.location = 'index.html'
-    }).catch(function (error) {
-        // An error happened.
-        window.alert("Error: " + errorMessage);
-    });
-}
+     // Clear form
+     document.getElementById('registrationForm').reset();
+ }
+
+ // Function to get get form values
+ function getInputVal(id) {
+     return document.getElementById(id).value;
+ }
+
+
+ // Save message to firebase
+ function saveTeam(teamName, memberName1, memberName2, memberName3, memberName4, projectSummary, emblem) {
+     firebase.auth().onAuthStateChanged(function (user) {
+             if (user) {
+                 // User is signed in.
+                 user = firebase.auth().currentUser;
+                 this.userId = user.uid;
+                 // Reference messages collection
+                 firebase.database().ref('users/' + firebase.auth().currentUser.uid).set({
+                     teamName: teamName,
+                     memberName1: memberName1,
+                     memberName2: memberName2,
+                     memberName3: memberName3,
+                     memberName4: memberName4,
+                     projectSummary: projectSummary,
+                     emblem: emblem
+                 });
+             } else {
+                 // No user is signed in.
+             }
+         }
+
+     )
+ }
+
+
+
+ //LOGOUT----------------------------
+ function logout() {
+     firebase.auth().signOut().then(function () {
+         // Sign-out successful.
+         window.alert("You are now logged out.");
+         window.location = 'index.html'
+     }).catch(function (error) {
+         // An error happened.
+         window.alert("Error: " + errorMessage);
+     });
+ }

@@ -47,6 +47,14 @@ section {
     padding: 1%;
 }
 
+.alert{
+  text-align: center;
+  padding:10px;
+  background:#79c879;
+  color:#fff;
+  margin-bottom:10px;
+  display:none;
+}
 /*-----------------------------------------------*/
 /*------Headings---------*/
 /*-----------------------------------------------*/
